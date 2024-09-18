@@ -1,0 +1,5 @@
+baseURL = 'https://minazukijiro.github.io/rss-reader'
+canonifyURLs = true
+relativeURLs = true
+languageCode = 'en-us'
+title = 'My RSS Reader'
