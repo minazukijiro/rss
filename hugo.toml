@@ -3,4 +3,4 @@ canonifyURLs = true
 relativeURLs = true
 languageCode = 'en-us'
 title = 'My RSS Reader'
-theme = 'anubis2'
+theme = 'holy'
