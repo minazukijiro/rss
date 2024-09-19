@@ -11,6 +11,7 @@ paginate = 3
 
 [params]
 mode = 'auto'
+favicon = 'images/favicon.ico'
 
 [[params.social]]
 name = "GitHub"
