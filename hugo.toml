@@ -3,4 +3,31 @@ canonifyURLs = true
 relativeURLs = true
 languageCode = 'en-us'
 title = 'My RSS Reader'
-theme = 'holy'
+theme = 'archie'
+pygmentsstyle = 'dracula'
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+paginate = 3
+
+[params]
+mode = 'auto'
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/minazukijiro"
+
+[[menu.main]]
+name = 'Home'
+url = '/'
+weight = 1
+
+[[menu.main]]
+name = 'All posts'
+url = '/posts'
+weight = 2
+
+[[menu.main]]
+name = 'Tags'
+url = '/tags'
+weight = 3
