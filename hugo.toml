@@ -1,4 +1,4 @@
-baseURL = 'https://minazukijiro.github.io/rss-reader/'
+baseURL = 'http://localhost:1313/'
 canonifyURLs = true
 relativeURLs = true
 languageCode = 'en-us'
