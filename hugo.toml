@@ -9,6 +9,13 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 #paginate = 3
 
+[module]
+[[module.imports]]
+path = 'github.com/hugomods/pwa'
+
+[outputs]
+home = ['HTML', 'RSS', 'Offline', 'WebAppManifest']
+
 [params]
 mode = 'auto'
 favicon = 'images/logo.png'
@@ -18,6 +25,7 @@ name = "GitHub"
 icon = "github"
 url = "https://github.com/minazukijiro"
 
+[menu]
 [[menu.main]]
 name = 'Home'
 url = '/'
