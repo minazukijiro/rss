@@ -11,7 +11,7 @@ pygmentscodefencesguesssyntax = true
 
 [params]
 mode = 'auto'
-favicon = 'images/favicon.ico'
+favicon = 'images/logo.png'
 
 [[params.social]]
 name = "GitHub"
