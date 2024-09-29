@@ -16,7 +16,7 @@ const util = require('util');
         data = line.split(' ');
         let url = data[0];
         let tag = [];
-        for (let i = 1; i < data.length; i++) tag.push(data[i]);
+        if (data.length > 1) tag = data[1].split(',');
 
         let feed = await parser.parseURL(url);
         console.log(feed.title + ': ' + feed.items.length + ' items');
