@@ -1,7 +1,7 @@
 +++
 title = """アティックシリーズ - シャトルコットンクロス"""
 date = 2024-09-28T02:05:36.000Z
-tags = ["\"Nigel","Cabourn\"","clothes"]
+tags = ["clothes","Nigel Cabourn"]
 +++
 ブログをご覧の皆様こんにちは。東急プラザ銀座店の桐山です。  
 前回の[ブログ](https://cabourn.jp/blogs/shop-info/tokyuplazaginza20240913)に引き続き、アティックシリーズから**シャトルコットンクロス**を使用した三型をご紹介いたします。

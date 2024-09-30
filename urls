@@ -1,7 +1,7 @@
-http://tcbjeans.com/feed clothes,tcbjeans,jeans
-http://rssblog.ameba.jp/barnstormer-go/rss20.xml clothes,barnstormer
-https://www.standardcalifornia.com/blog/feed/ clothes,STANDARD CALIFORNIA
-https://cabourn.jp/blogs/shop-info.atom clothes,Nigel Cabourn
-https://www.town.kuriyama.hokkaido.jp/rss/10/list1.xml kuriyama,news
-https://www.town.kuriyama.hokkaido.jp/rss/10/list8.xml kuriyama,recruit
-https://status.newrelic.com/history.rss newrelic,status
+http://tcbjeans.com/feed clothes tcbjeans jeans
+http://rssblog.ameba.jp/barnstormer-go/rss20.xml clothes barnstormer
+https://www.standardcalifornia.com/blog/feed/ clothes "STANDARD CALIFORNIA"
+https://cabourn.jp/blogs/shop-info.atom clothes "Nigel Cabourn"
+https://www.town.kuriyama.hokkaido.jp/rss/10/list1.xml kuriyama news
+https://www.town.kuriyama.hokkaido.jp/rss/10/list8.xml kuriyama recruit
+https://status.newrelic.com/history.rss newrelic status
