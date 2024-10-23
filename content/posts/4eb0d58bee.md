@@ -169,4 +169,20 @@ LIMITED EDITION 5 - THE TRAGEDY OF EVEREST 1924 -
 
 [![](https://scdn.line-apps.com/n/line_add_friends/btn/ja.png)](https://lin.ee/438JalM)
 
+[**Nigel Cabourn ルクア大阪店の過去の記事はこちら**](https://cabourn.jp/blogs/shop-info/tagged/the-army-gym-lucua-osaka-store)
+
+[Nigel Cabourn THE ARMY GYM ルクア大阪店](https://cabourn.jp/pages/osaka)
+
+[〒530－8558](https://cabourn.jp/pages/osaka)
+
+[大阪市北区梅田3-1-3 ルクア イーレ8F](https://cabourn.jp/pages/osaka)
+
+[TEL:  06-6341-1213](tel:0663411213)
+
+営業時間　(10:30 open - 20:30 close) 
+
+<アクセス>
+
+・JR大阪駅3階 連絡橋口改札より、ルクアイーレ3F入口に直結
+
 [[source]](https://cabourn.jp/blogs/shop-info/lucuaosaka20241023)

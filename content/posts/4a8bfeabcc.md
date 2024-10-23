@@ -1,19 +1,25 @@
 +++
-title = """10月26日(土)都合により12時開店となります"""
-date = 2024-10-23T12:10:10.000Z
+title = """10/25（金）世界一斉発売"""
+date = 2024-10-23T11:20:57.000Z
 tags = ["clothes","BarnStormer"]
 +++
 [![](https://stat.ameba.jp/user_images/20231023/16/barnstormer-go/b2/03/p/o0420015015354743273.png)](https://ameblo.jp/barnstormer-go/entry-12825670498.html)
 
 こんにちは、バーンストーマーです。
 
-[![](https://stat.ameba.jp/user_images/20241021/18/barnstormer-go/78/14/p/o0410017015500624528.png)](https://stat.ameba.jp/user_images/20241021/18/barnstormer-go/78/14/p/o0410017015500624528.png)
+10/25（金）世界一斉発売！！　フルカウント2024年秋冬大戦モデル。
 
-**都合により今週末10月26日(土)は****12時開店**
+パンツは0105、ジャケットはファーストタイプとなります。
 
-とさせていただきます。
+[![](https://stat.ameba.jp/user_images/20241023/19/barnstormer-go/d8/d0/j/o1798224715501398998.jpg)](https://stat.ameba.jp/user_images/20241023/19/barnstormer-go/d8/d0/j/o1798224715501398998.jpg)
 
-ご不便とご迷惑をお掛け致しますが、何卒ご容赦下さいますようお願い申し上げます。
+[![](https://stat.ameba.jp/user_images/20241023/19/barnstormer-go/f5/38/j/o2000250015501399004.jpg)](https://stat.ameba.jp/user_images/20241023/19/barnstormer-go/f5/38/j/o2000250015501399004.jpg)
+
+明後日の0時よりオンライン上で購入できるようにしておきます。
+
+それより前には画像を公開できればと思います。
+
+ご検討よろしく御願い致します。
 
 それでは、また。。。。
 
@@ -46,4 +52,4 @@ HP：[https://www.barnstormer.jp/](https://www.barnstormer.jp/)
 
 **\-------------------------------------**
 
-[[source]](https://ameblo.jp/barnstormer-go/entry-12872108948.html)
+[[source]](https://ameblo.jp/barnstormer-go/entry-12872361568.html)
