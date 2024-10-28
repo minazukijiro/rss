@@ -9,7 +9,7 @@ tags = ["clothes","BarnStormer"]
 
 日々沢山革ジャンが入荷してきているのですが、そんな中おススメしたいのがこの1着！！
 
-FINECREEK＆CO　ACJK058 Harris Deer　
+FINECREEK＆CO　ACJK058 Harris Deer　（ワピチ）
 
 [![](https://stat.ameba.jp/user_images/20241028/13/barnstormer-go/df/a9/j/o0467070115503217362.jpg)](https://stat.ameba.jp/user_images/20241028/13/barnstormer-go/df/a9/j/o0467070115503217362.jpg)
 
@@ -28,6 +28,8 @@ FINECREEK＆CO　ACJK058 Harris Deer　
 [![](https://stat.ameba.jp/user_images/20241028/13/barnstormer-go/ff/05/j/o0467070115503217374.jpg)](https://stat.ameba.jp/user_images/20241028/13/barnstormer-go/ff/05/j/o0467070115503217374.jpg)
 
 この鹿革、FINE CREEKでよく使用するワピチの革ほどの分厚さがあります！！
+
+革はワピチでした。申訳ございません。
 
 かなり重厚なのに、その着心地は柔らかくとても着やすい仕上がりですね。革の厚みがあるので、腕にはかなり大きく蛇腹状のシワが入ってくれそうな予感。
 
