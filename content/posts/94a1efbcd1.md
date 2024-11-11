@@ -267,6 +267,14 @@ LIMITED EDITION 5より、[SANDY IRVINE JACKET](https://cabourn.jp/products/8049
 
 ⠀
 
+![](https://cdn.shopify.com/s/files/1/0094/9295/5196/files/IMG_1279.jpg?v=1731298180)
+
+⠀
+
+⠀
+
+![](https://cdn.shopify.com/s/files/1/0094/9295/5196/files/IMG_1281.jpg?v=1731298180)
+
 ⠀
 
 これまでも、コロナ過以降の世界のものづくりの市場は一変し、英国製品のモノづくりが如何に困難か、売り場にいるスタッフの誰もが店頭の変化を感じてきた。
