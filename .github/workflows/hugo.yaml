@@ -40,6 +40,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Delete posts older than 7 days
+        run: find content/posts -mtime +6 -delete
+      - name: Commit delete files
+        run: |
+          if git ls-files -d | grep -q content/posts; then
+              git config user.name github-actions
+              git config user.email github-actions@github.com
+              git add content/posts
+              git commit -m "deleted" -a
+          fi
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
@@ -54,7 +64,7 @@ jobs:
               git config user.name github-actions
               git config user.email github-actions@github.com
               git add content/posts
-              git commit -m "generated"
+              git commit -m "generated" -a
               git push
           fi
 
