@@ -62,6 +62,10 @@ WALE8は、**１インチの間に8本**ある事となります。
 
 [【予約24FW】WALE8\[1920s FRISCO TROUSER\] | デラックスウエア公式オンラインストア【予約24FW】WALE8\[1920s FRISCO TROUSER\] ダリーズ＆コー アメカジブランドデラックスウエア公式オンラインストアはジーンズ、シャツ、ジャケット、Tシャツ、ブーツなど完全日本製にて製造する拘りの純国産ブランドです。企画から素材、型紙・縫製そして卸売・小売り販促まで一貫して手掛ける数少ないアパレル。![リンク](https://c.stat100.ameba.jp/ameblo/symbols/v3.20.0/svg/gray/editor_link.svg)www.deluxeware.net![](https://deluxe25.itembox.design/product/010/000000001081/000000001081-01-l.jpg?t=20241121100833)](https://www.deluxeware.net/c/dalees/WALE8)
 
+**【2025年春夏コレクション】速報動画はこちら↓**
+
+[2025SS COLLECTION/2025年春夏コレクション商品紹介デラックスウエア2025年春夏コレクション展示会より動画にて商品紹介をお届けします。 デラックスウエアが2025年からリリースする商品を、企画者が企画内容、商品の詳細を御紹介致します。![リンク](https://c.stat100.ameba.jp/ameblo/symbols/v3.20.0/svg/gray/editor_link.svg)youtube.com![](https://i.ytimg.com/vi/A71qJSd2lh4/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAjvDtZHCLmch_wfz5qqtOMUoi28A&days_since_epoch=20054)](https://youtube.com/playlist?list=PLmcuUjZ67rhnclr762_W-zDg7FyyrNvqF&si=EhlZK1yTrE5mAfzO)
+
 [![](https://stat.ameba.jp/user_images/20241116/16/deluxeware/4a/05/j/o1200050015510661447.jpg?caw=800)](https://www.deluxeware.net/c/deluxeware/D-26)
 
 [![](https://stat.ameba.jp/user_images/20240315/15/deluxeware/04/7f/j/o0800026015413271803.jpg?caw=800)](https://www.instagram.com/deluxeware/?hl=ja)
