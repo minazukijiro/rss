@@ -1,8 +1,13 @@
 +++
 title = """Potential Service Interruption"""
-date = 2024-12-05T09:42:12.000Z
+date = 2024-12-05T10:38:00.000Z
 tags = ["newrelic","status"]
 +++
+Dec 5, 10:38 UTC  
+**Resolved** - Between 07:20 UTC and 10:25 UTC on Dec 05, some customers may have experience issue with APM monitoring/tools not displaying data  
+  
+We have investigated and resolved this service interruption and impacted services have returned to normal operations.
+
 Dec 5, 09:42 UTC  
 **Update** - We are investigating a potential service interruption that may impact some customers. Some customers may be experiencing issues with APM monitoring/tools not displaying data. Please continue to monitor this page for updates.
 
