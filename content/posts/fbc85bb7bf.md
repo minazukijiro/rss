@@ -1,6 +1,6 @@
 +++
 title = """12/5（木）本日営業時間変更の御案内"""
-date = 2024-12-04T09:53:34.000Z
+date = 2024-12-05T01:53:34.000Z
 tags = ["clothes","BarnStormer"]
 +++
 [![](https://stat.ameba.jp/user_images/20231023/16/barnstormer-go/b2/03/p/o0420015015354743273.png)](https://ameblo.jp/barnstormer-go/entry-12825670498.html)
