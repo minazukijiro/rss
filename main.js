@@ -55,6 +55,11 @@ const util = require('util');
 
         let markdown = '';
         if ('content' in item) markdown = turndownService.turndown(item.content);
+        else {
+          let r = await fetch(item.link);
+          markdown = turndownService.turndown(await r.text());
+        }
+
         let text = util.format('+++\ntitle = """%s"""\ndate = %s\nexpiryDate = %s\ntags = %s\n+++\n%s\n\n[[source]](%s)\n',
                                title, date.toISOString(), expiryDate.toISOString(), JSON.stringify(tag), markdown, item.link);
         fs.writeFileSync(filepath, text, err => { if (err) { console.log(err); throw(err) } });
