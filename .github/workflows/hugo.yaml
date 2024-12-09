@@ -76,7 +76,7 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Delete posts older than 7 days
+      - name: Remove expired posts
         run: hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n rm -v
       - name: Commit delete files
         run: |

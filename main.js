@@ -12,6 +12,7 @@ const util = require('util');
 (async () => {
   const stream = fs.createReadStream('urls', 'utf8');
   const reader = readline.createInterface({input: stream});
+
   reader.on('line', async line => {
     data = line.split(' ');
     let url = data[0];
@@ -29,7 +30,7 @@ const util = require('util');
     }
 
     let feed = await parser.parseURL(url);
-    console.log(feed.title + ': ' + feed.items.length + ' items');
+    let n = 0;
 
     feed.items.forEach(item => {
       let hash = crypto.createHash('sha1').update(item.title).digest('hex').slice(-10);
@@ -58,8 +59,10 @@ const util = require('util');
                                title, date.toISOString(), expiryDate.toISOString(), JSON.stringify(tag), markdown, item.link);
         fs.writeFileSync(filepath, text, err => { if (err) { console.log(err); throw(err) } });
 
-        console.log('-> ' + title)
+        n++;
       }
     });
+
+    console.log(util.format('%s: new %d/%d items', feed.title, n, feed.items.length));
   });
 })();
