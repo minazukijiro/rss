@@ -1,6 +1,7 @@
 +++
 title = """JOE McCOY WWII デニムチョアコートのご紹介です♪"""
 date = 2024-10-10T09:16:10.000Z
+expiryDate = 2024-10-10T09:16:10.000Z
 tags = ["clothes","The REAL McCOY'S NAGOYA"]
 +++
 リアルマッコイズ名古屋の中林です  

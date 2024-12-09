@@ -1,6 +1,7 @@
 +++
 title = """《FILSONのサーマル》WAFFLE KNIT THERMAL"""
 date = 2024-11-09T06:49:38.000Z
+expiryDate = 2024-11-09T06:49:38.000Z
 tags = ["clothes","Nigel Cabourn"]
 +++
 ![](https://cdn.shopify.com/s/files/1/0094/9295/5196/files/IMG_6150_480x480.jpg?v=1730887081)  

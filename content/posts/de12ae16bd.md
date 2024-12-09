@@ -1,6 +1,7 @@
 +++
 title = """《育てる楽しみ》NEW MEDICAL SHIRT"""
 date = 2024-09-10T06:27:21.000Z
+expiryDate = 2024-09-10T06:27:21.000Z
 tags = ["clothes","Nigel Cabourn"]
 +++
  ![](https://cdn.shopify.com/s/files/1/0094/9295/5196/files/IMG_2478_480x480.jpg?v=1725871578)

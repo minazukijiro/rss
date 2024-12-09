@@ -1,6 +1,7 @@
 +++
 title = """《青みがかったCharcoal Grey》50'S CREW NECK - 20.5oz"""
 date = 2024-10-12T02:00:02.000Z
+expiryDate = 2024-10-12T02:00:02.000Z
 tags = ["clothes","Nigel Cabourn"]
 +++
 ![](https://cdn.shopify.com/s/files/1/0094/9295/5196/files/IMG_6140_86668c4c-fd1a-40d5-9355-ee2b04b1035a_480x480.jpg?v=1728548140) 

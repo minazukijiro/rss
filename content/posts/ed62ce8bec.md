@@ -1,6 +1,7 @@
 +++
 title = """Scheduled Maintenance for the US & EU Regions - November 10th from 06:00 UTC to 09:00 UTC"""
 date = 2024-11-10T06:00:00.000Z
+expiryDate = 2024-11-10T06:00:00.000Z
 tags = ["newrelic","status"]
 +++
 **THIS IS A SCHEDULED EVENT Nov 10, 06:00 - 09:00 UTC**

@@ -1,6 +1,7 @@
 +++
 title = """毎日届くよ"""
 date = 2024-10-16T07:52:21.000Z
+expiryDate = 2024-10-16T07:52:21.000Z
 tags = ["clothes","BarnStormer"]
 +++
 [![](https://stat.ameba.jp/user_images/20231023/16/barnstormer-go/b2/03/p/o0420015015354743273.png)](https://ameblo.jp/barnstormer-go/entry-12825670498.html)

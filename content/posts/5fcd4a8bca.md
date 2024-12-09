@@ -1,6 +1,7 @@
 +++
 title = """CHURCH KNIT P/O & CURCH KNIT C/D"""
 date = 2024-10-25T02:00:02.000Z
+expiryDate = 2024-10-25T02:00:02.000Z
 tags = ["clothes","Nigel Cabourn"]
 +++
 ブログをご覧の皆様こんにちは。東急プラザ銀座店の桐山です。  

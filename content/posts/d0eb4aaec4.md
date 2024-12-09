@@ -1,6 +1,7 @@
 +++
 title = """《お出かけのマストアイテム》UTILITY SHIRT TYPE2-10oz DENIM"""
 date = 2024-09-29T04:20:21.000Z
+expiryDate = 2024-09-29T04:20:21.000Z
 tags = ["clothes","Nigel Cabourn"]
 +++
 ブログをご覧の皆様

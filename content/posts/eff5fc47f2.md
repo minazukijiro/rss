@@ -1,6 +1,7 @@
 +++
 title = """【ルクア大阪店】LUCUAメンバーズカード ポイントアップキャンペーンの開催"""
 date = 2024-11-18T03:00:07.000Z
+expiryDate = 2024-11-18T03:00:07.000Z
 tags = ["clothes","Nigel Cabourn"]
 +++
 ![](https://cdn.shopify.com/s/files/1/0094/9295/5196/files/LINE_5.jpg?v=1731826616)

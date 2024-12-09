@@ -1,6 +1,7 @@
 +++
 title = """新入荷速報です♪ JOE McCOY 1stタイプ レザージャケット"""
 date = 2024-11-07T09:45:47.000Z
+expiryDate = 2024-11-07T09:45:47.000Z
 tags = ["clothes","The REAL McCOY'S NAGOYA"]
 +++
 リアルマッコイズ名古屋の中林です  

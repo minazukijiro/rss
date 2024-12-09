@@ -1,6 +1,7 @@
 +++
 title = """《極上の革ベスト》CAPTAIN VEST - OIL VELOUR"""
 date = 2024-09-27T11:00:00.000Z
+expiryDate = 2024-09-27T11:00:00.000Z
 tags = ["clothes","Nigel Cabourn"]
 +++
 ![](https://cdn.shopify.com/s/files/1/0094/9295/5196/files/IMG_3925_480x480.jpg?v=1727405985)

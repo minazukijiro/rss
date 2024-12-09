@@ -1,6 +1,7 @@
 +++
 title = """〜Waist Harness入荷 &新企画のご紹介 & 今週の新着動画は『ラストリゾート『銀タグ』』〜【WEST】"""
 date = 2024-10-20T11:09:39.000Z
+expiryDate = 2024-10-20T11:09:39.000Z
 tags = ["clothes","JELADO"]
 +++
 〜Waist Harness〜

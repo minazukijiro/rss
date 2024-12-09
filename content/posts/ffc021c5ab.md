@@ -1,6 +1,7 @@
 +++
 title = """気にされてご来店頂く事が増えてきた B-3"""
 date = 2024-10-05T04:06:15.000Z
+expiryDate = 2024-10-05T04:06:15.000Z
 tags = ["clothes","The REAL McCOY'S NAGOYA"]
 +++
 [TheREALMCCOYS名古屋](https://www.instagram.com/explore/tags/therealmccoys%E5%90%8D%E5%8F%A4%E5%B1%8B/)  

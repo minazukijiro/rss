@@ -1,6 +1,7 @@
 +++
 title = """Scheduled Maintenance for Support Center - June 15th from 05:00 - 06:00 UTC"""
 date = 2024-06-15T06:00:02.000Z
+expiryDate = 2024-06-15T06:00:02.000Z
 tags = ["newrelic","status"]
 +++
 Jun 15, 06:00 UTC  

@@ -1,6 +1,7 @@
 +++
 title = """《王道のスウェット》50s CREW NECK - Grey"""
 date = 2024-10-11T03:35:36.000Z
+expiryDate = 2024-10-11T03:35:36.000Z
 tags = ["clothes","Nigel Cabourn"]
 +++
 ここ数年、ヴィンテージスウェットは空前の盛り上がりを見せています。

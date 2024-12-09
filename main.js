@@ -35,20 +35,31 @@ const util = require('util');
       let hash = crypto.createHash('sha1').update(item.title).digest('hex').slice(-10);
       let filepath = 'content/posts/' + hash + '.md';
 
-      let title = feed.title;
-      if ('title' in item) title = item.title;
+      if (!fs.existsSync(filepath)) {
+        let title = feed.title;
+        if ('title' in item) title = item.title;
 
-      let date = item.isoDate;
-      if ('pubDate' in item) date = item.pubDate;
-      else if ('date' in item) date = item.date;
-      if (date != "") date = new Date(date).toISOString();
+        let dateStr = null;
+        if ('isoDate' in item) dateStr = item.isoDate;
+        else if ('pubDate' in item) date = item.pubDate;
+        else if ('date' in item) date = item.date;
 
-      let markdown = '';
-      if ('content' in item) markdown = turndownService.turndown(item.content);
+        let date;
+        if (dateStr == null) date = new Date();
+        else date = new Date(dateStr);
 
-      let text = util.format('+++\ntitle = """%s"""\ndate = %s\ntags = %s\n+++\n%s\n\n[[source]](%s)\n', title, date, JSON.stringify(tag), markdown, item.link);
+        let today = new Date();
+        let expiryDate = new Date();
+        expiryDate.setDate(today.getDate() + 7);
 
-      fs.writeFileSync(filepath, text, err => { if (err) { console.log(err); throw(err) } });
+        let markdown = '';
+        if ('content' in item) markdown = turndownService.turndown(item.content);
+        let text = util.format('+++\ntitle = """%s"""\ndate = %s\nexpiryDate = %s\ntags = %s\n+++\n%s\n\n[[source]](%s)\n',
+                               title, date.toISOString(), expiryDate.toISOString(), JSON.stringify(tag), markdown, item.link);
+        fs.writeFileSync(filepath, text, err => { if (err) { console.log(err); throw(err) } });
+
+        console.log('-> ' + title)
+      }
     });
   });
 })();

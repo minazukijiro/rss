@@ -1,6 +1,7 @@
 +++
 title = """〜41Khaki Stencil入荷 & 予約商品更新 & 今週の新着動画は『2025年春夏版 熊崎おねだり企画』～【WEST】"""
 date = 2024-10-01T10:00:02.000Z
+expiryDate = 2024-10-01T10:00:02.000Z
 tags = ["clothes","JELADO"]
 +++
 〜41Khaki Stencil〜

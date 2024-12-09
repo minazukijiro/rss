@@ -1,6 +1,7 @@
 +++
 title = """新入荷速報です♪ McCOY'S G-1 ジャケット"""
 date = 2024-10-09T07:07:09.000Z
+expiryDate = 2024-10-09T07:07:09.000Z
 tags = ["clothes","The REAL McCOY'S NAGOYA"]
 +++
 リアルマッコイズ名古屋の中林です  

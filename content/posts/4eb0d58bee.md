@@ -1,6 +1,7 @@
 +++
 title = """Arrived from UK / 山内の視点"""
 date = 2024-10-23T06:44:07.000Z
+expiryDate = 2024-10-23T06:44:07.000Z
 tags = ["clothes","Nigel Cabourn"]
 +++
 ![](https://cdn.shopify.com/s/files/1/0094/9295/5196/files/IMG_1104.jpg?v=1729656072)
