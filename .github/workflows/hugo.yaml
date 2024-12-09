@@ -41,7 +41,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Delete posts older than 7 days
-        run: find content/posts -mtime +6 -delete
+        run: find content/posts -mtime +6 -delete -print
       - name: Commit delete files
         run: |
           if git ls-files -d | grep -q content/posts; then
