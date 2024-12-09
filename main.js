@@ -56,8 +56,10 @@ const util = require('util');
         let markdown = '';
         if ('content' in item) markdown = turndownService.turndown(item.content);
         else {
-          let r = await fetch(item.link);
-          markdown = turndownService.turndown(await r.text());
+          fetch(item.link).then((resp) => {
+            if (resp.ok)
+              markdown = turndownService.turndown(resp.text);
+          });
         }
 
         let text = util.format('+++\ntitle = """%s"""\ndate = %s\nexpiryDate = %s\ntags = %s\n+++\n%s\n\n[[source]](%s)\n',
