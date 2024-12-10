@@ -61,6 +61,8 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     needs: update
     env:
       HUGO_VERSION: 0.128.0
@@ -77,14 +79,12 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Remove expired posts
-        run: hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n rm -v
-      - name: Commit delete files
         run: |
-          if git ls-files -d | xargs -rd\\n git rm; then
-              git config user.name github-actions
-              git config user.email github-actions@github.com
-              git commit -m "deleted" -a
-              git push
+          if hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n git rm; then
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git commit -m "deleted" -a
+          git push
           fi
       - name: Setup Pages
         id: pages
