@@ -1,9 +1,0 @@
-+++
-title = """今の時期にオススメのコーディネートブログ"""
-date = 2024-11-05T04:24:23.000Z
-expiryDate = 2024-11-05T04:24:23.000Z
-tags = ["clothes","STANDARD CALIFORNIA"]
-+++
-こんにちは、11月のコーディネートブログです。 今回は今の時期に使い勝手の良いアイテムを中心に、スタッフお気に入りのコーディネートを紹介しています。 是非参考にしてみてください！ （MODEL ： 167cm63㌔ ） \[…\]
-
-[[source]](https://www.standardcalifornia.com/blog/50214.html)
