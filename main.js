@@ -11,7 +11,7 @@ const util = require('util');
 
 (async () => {
   const stream = fs.createReadStream('urls', 'utf8');
-  const reader = readline.createInterface({input: stream});
+  const reader = readline.createInterface({input: stream, console: false});
 
   reader.on('line', async line => {
     data = line.split(' ');
