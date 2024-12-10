@@ -51,7 +51,7 @@ const util = require('util');
 
         let today = new Date();
         let expiryDate = new Date();
-        expiryDate.setDate(today.getDate() + 7);
+        expiryDate.setDate(today.getDate() + 3);
 
         let markdown = '';
         if ('content' in item) markdown = turndownService.turndown(item.content);

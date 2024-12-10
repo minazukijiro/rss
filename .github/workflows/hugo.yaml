@@ -77,7 +77,7 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Remove expired posts
-        run: hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n rm -v
+        run: hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n git rm
       - name: Commit delete files
         run: |
           if git ls-files -d | grep -q content/posts; then
