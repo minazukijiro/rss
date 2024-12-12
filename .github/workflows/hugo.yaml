@@ -76,11 +76,11 @@ jobs:
           fetch-depth: 0
       - name: Remove expired posts
         run: |
-          hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n git rm; then
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git commit -m "deleted" -a
-          git push
+          if hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n git rm; then
+              git config user.name github-actions
+              git config user.email github-actions@github.com
+              git commit -m "deleted" -a
+              git push
           fi
       - name: Setup Pages
         id: pages
