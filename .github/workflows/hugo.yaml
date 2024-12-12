@@ -48,13 +48,12 @@ jobs:
         run: node main.js
       - name: Commit files
         run: |
-          if git ls-files -o --exclude-standard | grep -q content/posts; then
-              git config user.name github-actions
-              git config user.email github-actions@github.com
-              git add content/posts
-              git commit -m "generated" -a
-              git push
-          fi
+          git ls-files -o --exclude-standard | grep -q content/posts \
+          && git config user.name github-actions \
+          && git config user.email github-actions@github.com \
+          && git add content/posts \
+          && git commit -m "generated" -a \
+          && git push
 
   # Build job
   build:
@@ -74,17 +73,14 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Remove expired posts
-        run: hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n rm
-      - name: Commit files
+      - name: Remove expired content
+        run: hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n git rm
+      - name: Commit removed files
         run: |
-          if git ls-files -d | grep -q content/posts; then
-              git ls-files -d | xargs -rd\\n git rm
-              git config user.name github-actions
-              git config user.email github-actions@github.com
-              git commit -m "deleted" -a
-              git push
-          fi
+          git status -s | grep -qE '^ ?D[ ]*content/posts' \
+          && git config user.name github-actions && git config user.email github-actions@github.com \
+          && git commit -m "Remove expired content" -a && git push \
+          || exit 0
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
