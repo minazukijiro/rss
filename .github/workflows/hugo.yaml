@@ -44,7 +44,7 @@ jobs:
           node-version: 22
       - name: Install modules
         run: npm ci
-      - name: Run script
+      - name: Generate content
         run: node main.js
       - name: Commit files
         run: |
@@ -75,8 +75,11 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Remove expired posts
+        run: hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n rm
+      - name: Commit files
         run: |
-          if hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n git rm; then
+          if git ls-files -d | grep -q content/posts; then
+              git ls-files -d | xargs -rd\\n git rm
               git config user.name github-actions
               git config user.email github-actions@github.com
               git commit -m "deleted" -a
