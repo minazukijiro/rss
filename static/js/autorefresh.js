@@ -1,23 +1,18 @@
-var inactivityTime = function () {
-  var timer;
+let interval = 5 * 60 * 1000;
+let time = new Date().getTime();
 
-  window.onload = timerReset;
-  document.onkeypress = timerReset;
-  document.onmousemove = timerReset;
-  document.onmousedown = timerReset;
-  document.ontouchstart = timerReset;
-  document.onclick = timerReset;
-  document.onscroll = timerReset;
-  document.onkeypress = timerReset;
+$(document.body).bind("mousemove keypress", function(e) {
+  time = new Date().getTime();
+});
 
-  function timerElapsed() {
+function refresh() {
+  if(new Date().getTime() - time >= interval) {
     console.log('Refresh');
-    location.reload();
+    window.location.reload(true);
+  } else {
+    console.og('Reset interval');
+    setTimeout(refresh, interval);
   }
+}
 
-  function timerReset() {
-    console.log('Reset timer');
-    clearTimeout(timer);
-    timer = setTimeout(timerElapsed, 30 * 60 * 1000); // 5 mins
-  }
-};
+setTimeout(refresh, interval);
