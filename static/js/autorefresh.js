@@ -1,10 +1,8 @@
 let refresh_interval = 30 * 60 * 1000;
 let check_interval = 60 * 1000;
-
 let time = new Date().getTime();
 
 onmousemove = () => { time = new Date().getTime(); };
-
 onclick = () => { time = new Date().getTime(); };
 
 refresh = () => {
