@@ -2,6 +2,8 @@
   "name": "rss",
   "short_name": "rss",
   "start_url": "/rss",
+  "display": "standalone",
+  "form_factor": "wide",
   "icons": [
     {
       "src": "images/logo/logo-16.png",
