@@ -1,18 +1,17 @@
-let interval = 5 * 60 * 1000;
+let refresh_interval = 30 * 60 * 1000;
+let check_interval = 60 * 1000;
+
 let time = new Date().getTime();
 
-$(document.body).bind("mousemove keypress", function(e) {
-  time = new Date().getTime();
-});
+onmousemove = () => { time = new Date().getTime(); };
 
-function refresh() {
-  if(new Date().getTime() - time >= interval) {
-    console.log('Refresh');
+onclick = () => { time = new Date().getTime(); };
+
+refresh = () => {
+  if (new Date().getTime() - time >= refresh_interval)
     window.location.reload(true);
-  } else {
-    console.og('Reset interval');
-    setTimeout(refresh, interval);
-  }
-}
+  else
+    setTimeout(refresh, check_interval);
+};
 
-setTimeout(refresh, interval);
+setTimeout(refresh, check_interval);
