@@ -2,7 +2,7 @@
   "name": "rss",
   "short_name": "rss",
   "start_url": "/rss",
-  "display": "standalone",
+  "display": "minimal-ui",
   "form_factor": "wide",
   "icons": [
     {
