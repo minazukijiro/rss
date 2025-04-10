@@ -35,6 +35,8 @@ jobs:
   # Update contents job
   update:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/minazukijiro/rss:main
     timeout-minutes: 3
     steps:
       - name: Checkout
@@ -47,6 +49,9 @@ jobs:
         run: npm ci
       - name: Generate content
         run: node main.js
+      - name: Remove expired content
+        run: |
+          hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n git rm
       - name: Commit files
         run: |
           git ls-files -o --exclude-standard | grep -q content/posts \
@@ -59,30 +64,32 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/minazukijiro/rss:main
     timeout-minutes: 3
     needs: update
     env:
       HUGO_VERSION: 0.128.0
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
+      # - name: Install Hugo CLI
+      #   run: |
+      #     wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+      #     && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      # - name: Install Dart Sass
+      #   run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Remove expired content
-        run: hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n git rm
-      - name: Commit removed files
-        run: |
-          git status -s | grep -qE '^ ?D[ ]*content/posts' \
-          && git config user.name github-actions && git config user.email github-actions@github.com \
-          && git commit -m "Remove expired content" -a && git push \
-          || exit 0
+      # - name: Remove expired content
+      #   run: hugo list expired | sed '1d' | cut -d, -f1 | xargs -rd\\n git rm
+      # - name: Commit removed files
+      #   run: |
+      #     git status -s | grep -qE '^ ?D[ ]*content/posts' \
+      #     && git config user.name github-actions && git config user.email github-actions@github.com \
+      #     && git commit -m "Remove expired content" -a && git push \
+      #     || exit 0
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
