@@ -9,7 +9,7 @@ const crypto = require('crypto');
 
 const f = async (url, tag) => {
   if (url === '') return;
-  fetch(url)
+  fetch(url, { signal: AbortSignal.timeout(3000) })
     .then(res => {
       if (!res.ok) {
         console.error(new Error(`status code ${res.status}`));
