@@ -9,50 +9,54 @@ const crypto = require('crypto');
 
 const f = async (url, tag) => {
   if (url === '') return;
-  fetch(url, { signal: AbortSignal.timeout(3000) })
-    .then(res => {
-      if (!res.ok) {
-        console.error(new Error(`status code ${res.status}`));
-        return;
-      }
+  try {
+    fetch(url, { signal: AbortSignal.timeout(3000) })
+      .then(res => {
+        if (!res.ok) {
+          console.error(new Error(`status code ${res.status}`));
+          return;
+        }
 
-      const parser = new FeedMe(true);
+        const parser = new FeedMe(true);
 
-      parser.on('finish', () => {
-        const feed = parser.done();
+        parser.on('finish', () => {
+          const feed = parser.done();
 
-        let n = 0;
-        feed.items.forEach(item => {
-          let hash = crypto.createHash('sha1').update(item.title).digest('hex').slice(-10);
-          let filepath = 'content/posts/' + hash + '.md';
-          if (fs.existsSync(filepath)) return;
+          let n = 0;
+          feed.items.forEach(item => {
+            let hash = crypto.createHash('sha1').update(item.title).digest('hex').slice(-10);
+            let filepath = 'content/posts/' + hash + '.md';
+            if (fs.existsSync(filepath)) return;
 
-          let pubdate;
-          if ('pubdate' in item)
-            pubdate = new Date(item.pubdate);
-          else if ('dc:date' in item)
-            pubdate = new Date(item['dc:date']);
+            let pubdate;
+            if ('pubdate' in item)
+              pubdate = new Date(item.pubdate);
+            else if ('dc:date' in item)
+              pubdate = new Date(item['dc:date']);
 
-          let today = new Date();
-          let expirydate = new Date();
-          expirydate.setDate(today.getDate() + 3);
+            let today = new Date();
+            let expirydate = new Date();
+            expirydate.setDate(today.getDate() + 3);
 
-          let description = typeof(item.description) === 'string' ? item.description : item.description.text;
-          let content = description === '' ? '' : turndownService.turndown(description);
+            let description = typeof(item.description) === 'string' ? item.description : item.description.text;
+            let content = description === '' ? '' : turndownService.turndown(description);
 
-          let text = util.format('+++\ntitle = """%s"""\ndate = %s\nexpiryDate = %s\ntags = %s\n+++\n%s\n\n[[source]](%s)\n',
-                                 item.title, pubdate.toISOString(), expirydate.toISOString(), JSON.stringify(tag), content, item.link);
+            let text = util.format('+++\ntitle = """%s"""\ndate = %s\nexpiryDate = %s\ntags = %s\n+++\n%s\n\n[[source]](%s)\n',
+                                   item.title, pubdate.toISOString(), expirydate.toISOString(), JSON.stringify(tag), content, item.link);
 
-          fs.writeFileSync(filepath, text, err => { if (err) { console.log(err); throw(err) } });
+            fs.writeFileSync(filepath, text, err => { if (err) { console.log(err); throw(err) } });
 
-          n++;
+            n++;
+          });
+
+          console.log(`${feed.title}: ${n}/${feed.items.length}`);
         });
 
-        console.log(`${feed.title}: ${n}/${feed.items.length}`);
+        Readable.fromWeb(res.body).pipe(parser);
       });
-
-      Readable.fromWeb(res.body).pipe(parser);
-    });
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 const fs = require('fs');
